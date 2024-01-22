@@ -182,10 +182,10 @@ services:
         source: ./logstash/pipeline
         target: /usr/share/logstash/pipeline
         read_only: true
-#      - type: bind
-#        source: ./geo/GeoLite2-City.mmdb
-#        target: /usr/share/logstash/GeoLite2-City.mmdb
-#        read_only: true
+      - type: bind
+        source: ./logstash/geo/GeoLite2-City.mmdb
+        target: /usr/share/logstash/GeoLite2-City.mmdb
+        read_only: true
     ports:
       - "5044:5044"
       - "5045:5045/udp"
