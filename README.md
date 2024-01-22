@@ -8,6 +8,12 @@
 path =>
 > /etc/filebeat  
 
+#### To check the filebeat is working properly run this command 
+> /usr/share/filebeat/bin/filebeat  test config --path.config /etc/filebeat
+
+> /usr/share/filebeat/bin/filebeat  test output --path.config /etc/filebeat 
+
+> /usr/share/filebeat/bin/filebeat  test --help
 
 
 
