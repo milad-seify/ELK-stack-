@@ -4,7 +4,7 @@ x-default-logs: &default-opts
   logging:
     options:
       max-size: "10m"
-
+#2.9.0
 services:
   opensearch-node1:
     image: opensearchproject/opensearch:2.7.0
